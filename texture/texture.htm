@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<h2>Texture synthesis comparison</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="text">Target image</div>
+  </div>
+  <div class="column">
+    <div class="text">SinGAN</div>
+  </div>
+  <div class="column">
+    <div class="text">Gatys</div>
+  </div>
+  <div class="column">
+    <div class="text">Ours</div>
+  </div>
+</div>
+
+
+<p>Class: braided</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/02.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/02.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/02_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_2_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: bubbly</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/03.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/03.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/03_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_3_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: bumpy</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/04.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/04.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/04_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_4_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: cracked</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/07.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/07.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/07_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_7_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: crosshatched</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/08.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/08.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/08_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_8_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: crystalline</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/09.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/09.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/09_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_9_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: fibrous</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/11.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/11.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/11_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_11_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: frilly</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/14.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/14.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/14_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_14_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: grooved</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/17.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/17.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/17_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_17_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: lacelike</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/21.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/21.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/21_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_21_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: marbled</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/23.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/23.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/23_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_23_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: porous</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/31.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/31.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/31_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_31_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: potholed</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/32.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/32.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/32_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_32_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: smeared</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/34.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/34.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/34_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_34_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: spiralled</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/35.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/35.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/35_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_35_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: stained</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/37.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/37.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/37_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_37_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: stratified</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/38.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/38.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/38_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_38_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: striped</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/39.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/39.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/39_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_39_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: woven</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/44.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/44.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/44_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_44_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+<p>Class: wrinkled</p>
+
+<div class="row">
+  <div class="column">
+    <img src="./texture_ref/45.jpg" alt='reference' title="Ours" style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_singan/45.png" alt='SinGAN' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_gatys/45_imagenet512.png" alt='DeepInversion' style="width:100%">
+  </div>
+  <div class="column">
+    <img title="Ours" src="./texture_ours/class_45_sample_0.png" alt='Ours' style="width:100%">
+  </div>
+</div>
+
+
+
+</body>
+</html>
