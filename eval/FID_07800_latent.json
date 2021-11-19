@@ -1,0 +1,9 @@
+{
+    "FID_latent/dog2cat": 36.41090816900316,
+    "FID_latent/wild2cat": 29.06682728555119,
+    "FID_latent/cat2dog": 103.81722580262164,
+    "FID_latent/wild2dog": 88.90757269580013,
+    "FID_latent/cat2wild": 69.84563432109722,
+    "FID_latent/dog2wild": 59.50417650220289,
+    "FID_latent/mean": 64.5920574627127
+}

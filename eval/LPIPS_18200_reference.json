@@ -1,0 +1,9 @@
+{
+    "LPIPS_reference/dog2cat": 0.4254859648644924,
+    "LPIPS_reference/wild2cat": 0.41386280581355095,
+    "LPIPS_reference/cat2dog": 0.4516272936016321,
+    "LPIPS_reference/wild2dog": 0.45008423551917076,
+    "LPIPS_reference/cat2wild": 0.41902706027030945,
+    "LPIPS_reference/dog2wild": 0.4156572911888361,
+    "LPIPS_reference/mean": 0.42929077520966524
+}
