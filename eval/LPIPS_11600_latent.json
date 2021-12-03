@@ -1,9 +1,0 @@
-{
-    "LPIPS_latent/dog2cat": 0.4513620939105749,
-    "LPIPS_latent/wild2cat": 0.4414453413337469,
-    "LPIPS_latent/cat2dog": 0.47790457494556904,
-    "LPIPS_latent/wild2dog": 0.4812103174626827,
-    "LPIPS_latent/cat2wild": 0.43164470233023167,
-    "LPIPS_latent/dog2wild": 0.43605857342481613,
-    "LPIPS_latent/mean": 0.4532709339012702
-}

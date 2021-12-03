@@ -1,9 +1,0 @@
-{
-    "FID_reference/dog2cat": 77.4736720645422,
-    "FID_reference/wild2cat": 60.609097725986175,
-    "FID_reference/cat2dog": 162.62451403296768,
-    "FID_reference/wild2dog": 169.76832820063413,
-    "FID_reference/cat2wild": 92.47908705599615,
-    "FID_reference/dog2wild": 96.25643075445953,
-    "FID_reference/mean": 109.86852163909764
-}
